@@ -9,6 +9,15 @@
           "revision": "194c9ec23822834b3ee76f3799b86aaec5837af9",
           "version": null
         }
+      },
+      {
+        "package": "MaterialFormSwiftUI",
+        "repositoryURL": "https://github.com/GirAppe/MaterialFormSwiftUI",
+        "state": {
+          "branch": "master",
+          "revision": "3e4f1dd40e0919b81dbebbeabba6dc902b0cf0f7",
+          "version": null
+        }
       }
     ]
   },

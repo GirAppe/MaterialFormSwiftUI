@@ -9,39 +9,14 @@
 /* Begin PBXBuildFile section */
 		C804AD19238FDB0D00AFD26B /* MaterialTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = C804AD18238FDB0D00AFD26B /* MaterialTextField.swift */; };
 		C804AD1C238FDB6D00AFD26B /* MaterialForm in Frameworks */ = {isa = PBXBuildFile; productRef = C804AD1B238FDB6D00AFD26B /* MaterialForm */; };
+		C8168019238FF06100CDD261 /* MaterialFormSwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = C8168018238FF06100CDD261 /* MaterialFormSwiftUI */; };
 		C8A531D3238FDDB7006D5645 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8A531D2238FDDB7006D5645 /* AppDelegate.swift */; };
 		C8A531D5238FDDB7006D5645 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8A531D4238FDDB7006D5645 /* SceneDelegate.swift */; };
 		C8A531D7238FDDB7006D5645 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8A531D6238FDDB7006D5645 /* ContentView.swift */; };
 		C8A531D9238FDDB8006D5645 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C8A531D8238FDDB8006D5645 /* Assets.xcassets */; };
 		C8A531DC238FDDB8006D5645 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C8A531DB238FDDB8006D5645 /* Preview Assets.xcassets */; };
 		C8A531DF238FDDB8006D5645 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C8A531DD238FDDB8006D5645 /* LaunchScreen.storyboard */; };
-		C8A531E4238FDE0D006D5645 /* MaterialFormSwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C88688CD234200A000C8ED7D /* MaterialFormSwiftUI.framework */; };
-		C8A531E5238FDE0D006D5645 /* MaterialFormSwiftUI.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = C88688CD234200A000C8ED7D /* MaterialFormSwiftUI.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
-
-/* Begin PBXContainerItemProxy section */
-		C8A531E6238FDE0D006D5645 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = C88688C4234200A000C8ED7D /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = C88688CC234200A000C8ED7D;
-			remoteInfo = MaterialFormSwiftUI;
-		};
-/* End PBXContainerItemProxy section */
-
-/* Begin PBXCopyFilesBuildPhase section */
-		C8A531E8238FDE0E006D5645 /* Embed Frameworks */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = "";
-			dstSubfolderSpec = 10;
-			files = (
-				C8A531E5238FDE0D006D5645 /* MaterialFormSwiftUI.framework in Embed Frameworks */,
-			);
-			name = "Embed Frameworks";
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		C804AD18238FDB0D00AFD26B /* MaterialTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MaterialTextField.swift; sourceTree = "<group>"; };
@@ -70,7 +45,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C8A531E4238FDE0D006D5645 /* MaterialFormSwiftUI.framework in Frameworks */,
+				C8168019238FF06100CDD261 /* MaterialFormSwiftUI in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -183,14 +158,15 @@
 				C8A531CC238FDDB7006D5645 /* Sources */,
 				C8A531CD238FDDB7006D5645 /* Frameworks */,
 				C8A531CE238FDDB7006D5645 /* Resources */,
-				C8A531E8238FDE0E006D5645 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				C8A531E7238FDE0D006D5645 /* PBXTargetDependency */,
 			);
 			name = SampleAppSwiftUI;
+			packageProductDependencies = (
+				C8168018238FF06100CDD261 /* MaterialFormSwiftUI */,
+			);
 			productName = SampleAppSwiftUI;
 			productReference = C8A531D0238FDDB7006D5645 /* SampleAppSwiftUI.app */;
 			productType = "com.apple.product-type.application";
@@ -225,6 +201,7 @@
 			mainGroup = C88688C3234200A000C8ED7D;
 			packageReferences = (
 				C804AD1A238FDB6D00AFD26B /* XCRemoteSwiftPackageReference "MaterialForm" */,
+				C8168017238FF06100CDD261 /* XCRemoteSwiftPackageReference "MaterialFormSwiftUI" */,
 			);
 			productRefGroup = C88688CE234200A000C8ED7D /* Products */;
 			projectDirPath = "";
@@ -276,14 +253,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		C8A531E7238FDE0D006D5645 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = C88688CC234200A000C8ED7D /* MaterialFormSwiftUI */;
-			targetProxy = C8A531E6238FDE0D006D5645 /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		C8A531DD238FDDB8006D5645 /* LaunchScreen.storyboard */ = {
@@ -558,6 +527,14 @@
 				kind = branch;
 			};
 		};
+		C8168017238FF06100CDD261 /* XCRemoteSwiftPackageReference "MaterialFormSwiftUI" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/GirAppe/MaterialFormSwiftUI";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -565,6 +542,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = C804AD1A238FDB6D00AFD26B /* XCRemoteSwiftPackageReference "MaterialForm" */;
 			productName = MaterialForm;
+		};
+		C8168018238FF06100CDD261 /* MaterialFormSwiftUI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C8168017238FF06100CDD261 /* XCRemoteSwiftPackageReference "MaterialFormSwiftUI" */;
+			productName = MaterialFormSwiftUI;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
