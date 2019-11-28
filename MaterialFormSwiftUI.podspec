@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
     s.tvos.deployment_target = '13.0'
     s.preserve_paths = '*'
     s.swift_version = '5.0'
-    s.source_files = 'Sources/**/*.swift'
+    s.source_files = 'Sources/MaterialFormSwiftUI/**/*'
     s.frameworks = ['UIKit', 'SwiftUI']
     s.dependency 'MaterialForm'
 end

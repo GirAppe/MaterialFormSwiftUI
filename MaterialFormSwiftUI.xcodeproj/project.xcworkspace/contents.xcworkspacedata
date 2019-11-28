@@ -2,6 +2,6 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "self:/Users/amichnia/Projects/MaterialFormSwiftUI/MaterialFormSwiftUI.xcodeproj">
+      location = "self:">
    </FileRef>
 </Workspace>

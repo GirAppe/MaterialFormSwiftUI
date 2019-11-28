@@ -1,0 +1,16 @@
+{
+  "object": {
+    "pins": [
+      {
+        "package": "MaterialForm",
+        "repositoryURL": "https://github.com/GirAppe/MaterialForm",
+        "state": {
+          "branch": "master",
+          "revision": "194c9ec23822834b3ee76f3799b86aaec5837af9",
+          "version": null
+        }
+      }
+    ]
+  },
+  "version": 1
+}
