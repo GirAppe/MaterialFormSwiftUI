@@ -4,23 +4,25 @@
 import PackageDescription
 
 let package = Package(
-    name: "MaterialForm",
-    platforms:  [.iOS(.v10), .tvOS(.v10)],
+    name: "MaterialFormSwiftUI",
+    platforms:  [.iOS(.v13), .tvOS(.v13)],
     products: [
         .library(
-            name: "MaterialForm",
-            targets: ["MaterialForm"]
+            name: "MaterialFormSwiftUI",
+            targets: ["MaterialFormSwiftUI"]
         ),
     ],
-    dependencies: [],
+    dependencies: [
+        .package(url: "https://github.com/GirAppe/MaterialForm.git", from: "0.0.2"),
+    ],
     targets: [
         .target(
-            name: "MaterialForm",
-            dependencies: []
+            name: "MaterialFormSwiftUI",
+            dependencies: ["MaterialForm"]
         ),
         .testTarget(
-            name: "MaterialFormTests",
-            dependencies: ["MaterialForm"]
+            name: "MaterialFormSwiftUITests",
+            dependencies: ["MaterialFormSwiftUI"]
         ),
     ]
 )

@@ -1,7 +1,7 @@
 import XCTest
 
-import MaterialFormTests
+import MaterialFormSwiftUITests
 
 var tests = [XCTestCaseEntry]()
-tests += MaterialFormTests.allTests()
+tests += MaterialFormSwiftUITests.allTests()
 XCTMain(tests)
