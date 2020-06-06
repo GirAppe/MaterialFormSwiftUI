@@ -13,7 +13,7 @@ let package = Package(
         ),
     ],
     dependencies: [
-        .package(url: "https://github.com/GirAppe/MaterialForm.git", from: "0.0.2"),
+        .package(url: "https://github.com/GirAppe/MaterialForm.git", .exact("0.9.6")),
     ],
     targets: [
         .target(
