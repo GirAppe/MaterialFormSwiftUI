@@ -1,6 +1,6 @@
 # MaterialForm
 
-Material UI Text Field component for both UIKit (iOS 10+) and SwiftUI (iOS 13+).
+Material UI Text Field component wrapper for SwiftUI.
 
 ## Look and UI
 
@@ -12,7 +12,7 @@ Default look and feel for light and dark theme style:
 
 ## Installation
 
-### 1. Swift Package Manager 
+### 1. Swift Package Manager
 
 ### 2. Cocoapods
 
